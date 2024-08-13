@@ -1,0 +1,66 @@
+*{
+    text-decoration: none;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #a96d6d3f;
+}
+.header{
+    background: #410b20;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1px;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 9px 29px;
+    background-color: rgba(29, 127, 9, 0.675);
+}
+.header a:hover{
+    color: yellow;
+    background-color: black;
+}
+
+.bgimg{
+    background: url(images/Background.png.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px;
+}
+.bgimg img{
+    width: 350px;
+}
+.bgimg .contact{
+    padding-right: 28%;
+}
+.contact a{
+    color: wheat;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 0px 8px;
+}
+.myname{
+    text-align: center;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+.myname a{
+    font-weight: bold;
+    color: #0044ff;
+    text-align: center;
+    position: absolute;
+    top: 250px;
+    font-size: 33px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
