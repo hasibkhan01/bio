@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Content" developer="hasibkhan">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Hasibul Islam</title>
     <style>
         * {
-            text-decoration: none;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
+            text-decoration: none;
         }
         body {
             font-family: 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 0;
             background-color: #a96d6d3f;
         }
         .header {
-            background: #410b20;
+            background-color: #410b20;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -35,57 +37,49 @@
             background-color: black;
         }
         .bgimg {
-            background: url(Background.png) no-repeat center center;
-            background-size: cover;
+            background: url(Background.png) no-repeat center center/cover;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
-            padding: 120px;
+            padding: 60px;
+            text-align: center;
         }
         .bgimg img {
-            width: 350px;
-            max-width: 100%;
+            width: 100%;
+            max-width: 350px;
             height: auto;
+            margin-bottom: 20px;
         }
-        .bgimg .contact {
-            padding-right: 28%;
+        .contact {
+            margin-bottom: 20px;
         }
         .contact a {
             color: wheat;
             font-size: 22px;
-            padding: 0 8px;
-        }
-        .myname {
-            text-align: center;
-            position: relative;
-            margin: 0;
-            padding: 0;
+            margin: 0 8px;
         }
         .myname a {
             font-weight: bold;
             color: #0044ff;
-            position: absolute;
-            top: 250px;
             font-size: 33px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 20px;
         }
-        @media (max-width: 768px) {
+        @media (min-width: 769px) {
             .bgimg {
-                flex-direction: column;
-                padding: 60px;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 120px;
+                text-align: left;
             }
-            .bgimg .contact {
-                padding-right: 0;
-                text-align: center;
+            .contact {
+                margin-bottom: 0;
             }
             .myname a {
-                top: 150px;
                 font-size: 28px;
             }
         }
     </style>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Hasibul Islam</title>
 </head>
 <body>
     <div class="myname">
@@ -100,10 +94,9 @@
         <img src="Hasibul-Islam.png" alt="Hasibul Islam">
         <div class="contact">
             <a href="https://www.facebook.com/hasibkhan01" class="fa fa-facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://www.wa.me/+8801754082444" class="fa fa-whatsapp" target="_blank" rel="noopener noreferrer">Whatsapp</a>
+            <a href="https://www.wa.me/+8801754082444" class="fa fa-whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             <a href="tel:+8801754082444" class="fa fa-phone">Mobile</a>
-            <br><br>
-            <a style="text-align: center; padding: 11px; margin-left: 88px;">+8801754-082444</a>
+            <p style="margin-top: 10px; color: wheat;">+8801754-082444</p>
         </div>
     </div>
     <script>
