@@ -1,4 +1,148 @@
+# Responsive Web Page with Error Handling
+
+## Requirement Summary
+This document outlines the creation of a responsive web page using HTML, CSS, and JavaScript. The code includes error handling and exception handling to ensure a robust user experience across devices.
+
+## Code Generated
+```html
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Content" developer="hasibkhan">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a96d6d3f;
+        }
+        .header {
+            background: #410b20;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+        .header a {
+            color: white;
+            font-size: 22px;
+            padding: 9px 29px;
+            background-color: rgba(29, 127, 9, 0.675);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .header a:hover {
+            color: yellow;
+            background-color: black;
+        }
+        .bgimg {
+            background: url(Background.png) no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 120px;
+        }
+        .bgimg img {
+            width: 350px;
+            max-width: 100%;
+            height: auto;
+        }
+        .bgimg .contact {
+            padding-right: 28%;
+        }
+        .contact a {
+            color: wheat;
+            font-size: 22px;
+            padding: 0 8px;
+        }
+        .myname {
+            text-align: center;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        .myname a {
+            font-weight: bold;
+            color: #0044ff;
+            position: absolute;
+            top: 250px;
+            font-size: 33px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        @media (max-width: 768px) {
+            .bgimg {
+                flex-direction: column;
+                padding: 60px;
+            }
+            .bgimg .contact {
+                padding-right: 0;
+                text-align: center;
+            }
+            .myname a {
+                top: 150px;
+                font-size: 28px;
+            }
+        }
+    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Hasibul Islam</title>
+</head>
+<body>
+    <div class="myname">
+        <a href="#contact">Hasib Khan</a>
+    </div>
+    <div class="header">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="bgimg">
+        <img src="Hasibul-Islam.png" alt="Hasibul Islam">
+        <div class="contact">
+            <a href="https://www.facebook.com/hasibkhan01" class="fa fa-facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.wa.me/+8801754082444" class="fa fa-whatsapp" target="_blank" rel="noopener noreferrer">Whatsapp</a>
+            <a href="tel:+8801754082444" class="fa fa-phone">Mobile</a>
+            <br><br>
+            <a style="text-align: center; padding: 11px; margin-left: 88px;">+8801754-082444</a>
+        </div>
+    </div>
+    <script>
+        // Error handling for image loading
+        const img = document.querySelector('.bgimg img');
+        img.onerror = function() {
+            console.error('Image failed to load. Please check the image source.');
+            img.src = 'default-image.png'; // Fallback image
+        };
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -95,3 +239,4 @@ body{
     </div>
 </body>
 </html>
+    -->
